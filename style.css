@@ -9,7 +9,9 @@ body{
 }
 
 main{
+    max-width: 800px;
     padding-bottom: 2.5rem;
+    margin: auto;
 }
 
 .main-img{
@@ -85,5 +87,41 @@ button{
     font-size: 1.05rem;
     color: white;
     background: hsl(234, 29%, 20%);
+}
+
+@media only screen and (min-width: 900px) {
+
+    body{
+        height: 100vh;
+        background-color: hsl(235, 18%, 26%);
+        padding: 10vh 0;
+    }
+    
+    main{
+        display: flex;
+        
+        flex-direction: row-reverse;
+        padding: 5vh;
+        /* margin: auto auto; */
+        gap: 5%;
+        height: 80vh;
+        background: white;
+        border-radius: 20px;
+        align-items: center;
+
+    }
+
+    .main-img{
+        width: 50%;
+        height: 100%;
+        background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+
+    .main-main{
+        width: 50%;
+
+    }
 }
 
